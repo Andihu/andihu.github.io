@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="了解经典邮箱如何处理邮箱数据、设备权限和 Google 用户数据。">
+  <title>隐私政策 | 经典邮箱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="经典邮箱首页"><span class="brand-mark" aria-hidden="true">✉</span><span>经典邮箱<small>CLASSICMAIL</small></span></a><nav aria-label="主要导航"><a href="index.html">首页</a><a href="privacy.html" aria-current="page">隐私政策</a><a href="https://gist.github.com/Andihu/348ccb459d73120e551a099d10761c4f#file-support-md">技术支持</a></nav></div></header>
+  <main class="shell document">
+    <div class="document-heading"><p class="eyebrow">PRIVACY POLICY</p><h1>隐私政策</h1><p>更新日期：2026 年 10 月 27 日</p><p>本政策说明经典邮箱如何处理邮箱连接、邮件内容、设备权限和主动反馈。</p></div>
+
+    <section aria-labelledby="scope"><h2 id="scope">1. 邮件数据与服务商</h2><p>经典邮箱是一款第三方邮件客户端。你添加账户并使用邮件功能时，应用处理邮箱地址、服务器设置、认证资料、文件夹、邮件头、正文、附件、草稿及邮件状态，用于登录、同步、搜索、阅读、撰写和发送。</p><p>IMAP/SMTP 和 POP3 连接访问你选择或配置的邮箱服务商。OAuth 可用时，应用通过相应服务商的授权与令牌端点完成登录；Microsoft Graph 可用时，邮件请求发送至 Microsoft。各项功能取决于版本配置和服务商授权。</p><p>当前邮件连接设计不通过开发者自建邮件服务器中转。邮箱服务商依其规则处理登录和收发；发送邮件时，发件服务商及你指定的收件方会收到相应的收件地址、正文和附件。其他服务按其自身规则处理数据。</p></section>
+
+    <section aria-labelledby="google"><h2 id="google">2. Google 用户数据</h2><p>当你选择连接 Google 账户并同意授权时，应用使用 Google OAuth 获取授权，再通过 IMAP/SMTP 连接 Google 邮箱。应用使用取得的邮件数据提供你主动使用的阅读、搜索、整理、草稿和收发功能。Google 登录取决于服务商审核状态、版本配置及账户政策。</p><p>Google OAuth 令牌保存在本机钥匙串；邮件内容、索引、草稿和状态可能缓存在应用专属目录。你可以在应用内删除该账户，也可以在 Google 账户的安全设置中撤销对应用的授权。应用内删除和服务商侧撤销是独立操作；详见下方“删除与备份”。</p><p>经典邮箱对从 Google API 获取的信息的使用及传输，将遵循 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括 Limited Use 要求。</p></section>
+
+    <section aria-labelledby="storage"><h2 id="storage">3. 本机存储与备份</h2><p>邮箱密码、授权码或 OAuth 令牌按账户保存在 iOS 钥匙串，使用本设备专用、首次解锁后可访问的保护级别。账户资料、邮件索引、已同步内容、草稿、联系人偏好与待同步更改保存在应用专属目录，相关文件写入使用 iOS 文件保护。</p><p>根据设备设置和备份方式，系统备份可能包含部分邮件缓存、草稿和附件；应用不承诺全部数据都被排除在备份之外。卸载应用并不能可靠代替删除钥匙串凭据，建议先在应用内删除账户。</p></section>
+
+    <section aria-labelledby="remote"><h2 id="remote">4. 远程图片与外部链接</h2><p>远程图片默认不自动加载。你可以为某封邮件选择显示图片，或开启自动加载。加载时，发件方指定的图片服务器可能收到 IP 地址、访问时间和图片地址中的标识，并据此推测邮件被查看。</p><p>HTML 邮件阅读使用非持久化网页数据存储，禁止邮件 JavaScript 执行。打开邮件中的外部链接需要确认，随后由系统交给相应网页或应用处理。</p></section>
+
+    <section aria-labelledby="permissions"><h2 id="permissions">5. 设备权限</h2><h3>通讯录</h3><p>在获得通讯录权限后，撰写页面读取系统允许访问的联系人姓名和邮箱地址，供搜索及选择收件人。联系人设置也可通过系统选择器接收你选中的联系人。你可在 iOS 设置中限制或撤销权限，也可手动填写地址。选作收件人的地址会随发送请求传给邮箱服务商。</p><h3>日历</h3><p>选择将邮件加入日历时，应用把邮件标题及纯文本内容或摘要预填到系统事件编辑器，由你确认保存或取消。iOS 16 会先请求日历事件访问权限；iOS 17 及以上使用系统编辑流程。已保存事件可能随你选择的日历账户同步。</p><h3>通知</h3><p>应用请求通知权限以提供新邮件提示和角标。你可以在系统设置中关闭通知；后台刷新时机由 iOS 决定。</p></section>
+
+    <section aria-labelledby="deletion"><h2 id="deletion">6. 删除与控制</h2><p>在应用账户设置中删除账户，会停止该账户连接，并移除本应用内的账户目录、邮件索引、草稿、待同步记录和钥匙串凭据。正在发送邮件时，应用会要求先等待；若删除操作报错，请按提示处理。</p><p>删除本机账户不会关闭邮箱服务商账户，也不会统一清除服务器邮件、收件方副本、导出文件、系统联系人或日历事件、系统备份。你可以在相应服务或设备中管理这些副本。Google 等服务商的 OAuth 授权也可在其账户安全页面撤销。</p></section>
+
+    <section aria-labelledby="support"><h2 id="support">7. 支持与主动提交的信息</h2><p>你可以通过<a href="https://gist.github.com/Andihu/348ccb459d73120e551a099d10761c4f#file-support-md">技术支持页面</a>的公开留言联系开发者；留言需要 GitHub 账号，其他访问者也可看到。开发者可能使用你主动提交的应用版本、设备与系统版本、去标识的问题描述来排查和回复。</p><p>请勿在公开留言中提交密码、授权码、令牌、邮件正文、附件、完整通讯录或其他敏感信息。公开内容可能已被他人复制；GitHub 对账号、留言及平台记录的处理适用其自身规则。</p></section>
+
+    <section aria-labelledby="changes"><h2 id="changes">8. 政策更新</h2><p>应用的数据处理方式或支持渠道发生变化时，本政策将相应更新并标注日期。涉及托管平台的数据处理，请查阅对应平台的隐私说明。</p></section>
+
+    <section class="english" lang="en" aria-labelledby="english-title"><p class="eyebrow">ENGLISH SUMMARY</p><h2 id="english-title">Privacy summary</h2><p>ClassicMail is a third-party email client. When you add an account, the app processes the account settings and the messages, attachments, drafts and status needed to provide your requested mail features. The current mail connection design connects to your chosen provider rather than routing messages through a developer-operated mail server.</p><p>If you choose to connect a Google account and grant authorization, the app uses Google OAuth and IMAP/SMTP to access your mailbox for user-directed reading, organization, drafts and sending. Availability depends on Google authorization, the app version and account policies. Google OAuth tokens are stored in the device Keychain; mailbox data may be cached locally.</p><p>ClassicMail's use and transfer of information received from Google APIs will follow the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p><p>Messages are sent through your chosen mail provider to the recipients you specify. If you enable remote images, their servers may receive your IP address and other request information. Removing an account in the app clears its local account data and credentials when the operation completes; it does not remove provider-held mail, recipient copies, exported files or system backups. You may separately revoke OAuth access in your provider's account settings.</p><p>For support, use the <a href="https://gist.github.com/Andihu/348ccb459d73120e551a099d10761c4f#file-support-md">public support page</a>. Comments are public and require a GitHub account. Do not post passwords, tokens, message contents, attachments or other sensitive information.</p></section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>经典邮箱</strong><p>ClassicMail · Privacy</p></div><div class="footer-links"><a href="index.html">返回首页</a><a href="https://gist.github.com/Andihu/348ccb459d73120e551a099d10761c4f#file-support-md">技术支持</a></div></div></footer>
+</body>
+</html>
